@@ -1,6 +1,7 @@
 # --- Global/Environment ---
 .env
 .env.*
+!.env.example
 .DS_Store
 *.log
 npm-debug.log*
