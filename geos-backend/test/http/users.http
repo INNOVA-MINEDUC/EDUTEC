@@ -1,0 +1,56 @@
+@url = http://localhost:8000
+
+### - Sign In
+
+POST {{url}}/users/sign_in.json
+Accept: application/json
+Content-Type: application/json
+
+{
+  "user": {
+    "email": "a@a.com",
+    "password": "123456"
+  }
+}
+
+### - Teacher Creation 
+
+POST {{url}}/api/v1/users/?noaff=false
+Accept: application/json
+Content-Type: application/json
+
+{
+	"user": {
+		"profile": "teacher",
+		"name": "Test Teacher",
+		"email": "b@a.com",
+		"password": "123456",
+		"born": "2007-01-02T04:00:00.000Z",
+		"gender": "female",
+		"tos": true,
+		"share_personal_data": true,
+		"share_work_data": false,
+		"country_id": "",
+		"province_id": "",
+		"state_id": "",
+		"city_id": "",
+		"school_id": "",
+		"teacher_data": {
+			"formation_level": "teacher_graduate",
+			"year_finished_formation": "2020",
+			"initial_formation": "secondary_education_teacher",
+			"internship_practice": "yes_observational",
+			"institution_initial_formation": "Name",
+			"tech_in_teaching": "no",
+			"course_modality": "online",
+			"formation_in_tech": "online",
+			"years_teaching": "between_7_and_9",
+			"years_using_tech": "between_1_and_3",
+			"tech_application": [
+				"sending_emails",
+				"conducting_research"
+			]
+		},
+		"principal_data": ""
+	}
+}

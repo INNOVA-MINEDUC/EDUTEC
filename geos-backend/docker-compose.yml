@@ -1,0 +1,28 @@
+version: '3.4'
+services:
+  api:
+    platform: linux/x86_64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    # This is the one that makes the magic
+    volumes:
+      - "./:/app"
+    ports:
+      - '8000:3000'
+    networks:
+      - geos-network
+    env_file: .env
+#    environment:
+#      - REDIS_URL=redis://redis:6379
+#    links:
+#      - redis
+#  redis:
+#    image: redis:latest
+#    ports:
+#      - '6379:6379'
+networks:
+  geos-network:
+    external: true
+    name: geos-database_geos-network

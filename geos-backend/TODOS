@@ -1,0 +1,6 @@
+PDF Feedback Directores:
+========================
+Archivo:
+app/views/api/v1/api/survey_feedback_school_v3.pdf.erb
+
+<div class="page number-1"> es la página de la portada (:31). Los logotipos se cargan en :34 y :36. Colocar los logotipos definitivos en app/assets/images y modificar las rutas relativas en estas líneas de código. Se puede también cambiar el markup si es necesario (mover los logos a otra posición, cambiarles el tamaño, etc).

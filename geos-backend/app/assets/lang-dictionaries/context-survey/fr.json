@@ -1,0 +1,41 @@
+{
+	"Introduction": {
+		"Title": "Guide Edutec Questionnaire pour enseignants",
+		"About": {
+			"Title": "À propos de l'auto-évaluation",
+			"Descr": "C'est un outil en ligne conçu pour que vous, en tant qu'enseignant dans des établissements d'enseignement public, puissiez jouer un rôle de premier plan dans votre propre développement professionnel en évaluant et en améliorant vos compétences numériques, facilitant ainsi votre développement professionnel."
+		},
+		"S1": {
+			"Title": "Domaines et compétences évalués",
+			"Descr": "Le questionnaire se compose de 2 grandes sections :",
+			"SS1": {
+				"Title": "Questions de contexte",
+				"Descr": "Les questions sont de nature informative concernant l'accès aux technologies dont dispose chaque enseignant. Dans cette section, vous trouverez des questions à choix multiple ou à choix unique."
+			},
+			"SS2": {
+				"Title": "Questions du questionnaire pour enseignants",
+				"Descr": "Cet outil d'auto-évaluation est composé de 23 questions réparties en 3 domaines et 12 compétences numériques, comme indiqué ci-dessous :"
+			},
+			"caption1": "Illustration 1. Structure du questionnaire d'auto-évaluation",
+			"caption2": "Source et élaboration : Guide Edutec (2019)."
+		},
+		"S2": {
+			"Title": "Introduction",
+			"P1": "Cher enseignant(e) :",
+			"P2": "Merci de votre intérêt à participer au processus d'auto-évaluation du Guide Edutec. Ce questionnaire vous permettra de mieux comprendre votre niveau d'adoption de la technologie éducative.",
+			"P3": "Rappelez-vous qu'il n'y a pas de bonnes ou de mauvaises réponses. L'important est d'être honnête dans vos réponses pour recevoir un retour approprié sur vos compétences numériques. Ce processus d'auto-évaluation marque la première étape vers un développement professionnel plus personnalisé et efficace.",
+			"P4": "Les données de l'étude seront traitées avec des normes de confidentialité élevées. Vos informations individuelles ne seront pas divulguées et les résultats de l'auto-évaluation ne seront pas utilisés contre vous. Ces résultats serviront uniquement à mieux comprendre les besoins numériques de nos enseignants.",
+			"SS1": "Directives sur le questionnaire",
+			"P5": "Le questionnaire a une durée estimée de 20 à 25 minutes. Chaque question présente 5 alternatives qui reflètent progressivement les différents niveaux d'utilisation de la technologie dans votre travail d'enseignant.",
+			"SS2": "Vous devez sélectionner une seule option.",
+			"P6": "Gardez à l'esprit que les réponses peuvent ne pas refléter exactement votre manière d'utiliser la technologie au travail. Dans ce cas, choisissez l'option qui correspond le mieux à votre réalité.",
+			"SS3": "Rapport de résultats",
+			"P7": "À la fin, vous recevrez un rapport détaillé avec des suggestions de ressources adaptées à vos besoins pour stimuler votre développement en compétences numériques. Le résultat de l'auto-évaluation est exprimé dans un retour qui montre cinq niveaux de développement ou niveaux d'appropriation technologique de l'enseignant dans chaque domaine et dans chaque compétence, comme illustré ci-dessous :"
+		},
+		"btnStart": "Commencer le questionnaire"
+	},
+	"ui": {
+		"btnContinue": "Continuer avec le questionnaire",
+		"indique": "Indiquez votre réponse"
+	}
+}

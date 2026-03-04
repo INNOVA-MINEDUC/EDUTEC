@@ -1,0 +1,41 @@
+{
+	"Introduction": {
+		"Title": "Guia Edutec Questionário para professores",
+		"About": {
+			"Title": "Sobre a autoavaliação",
+			"Descr": "É uma ferramenta online projetada para que você, como professor em instituições educacionais públicas, possa desempenhar um papel de protagonista em seu próprio desenvolvimento profissional, avaliando e melhorando suas habilidades digitais, facilitando assim seu desenvolvimento profissional."
+		},
+		"S1": {
+			"Title": "Áreas e competências avaliadas",
+			"Descr": "O questionário é composto por 2 grandes seções:",
+			"SS1": {
+				"Title": "Perguntas de contexto",
+				"Descr": "As perguntas são de caráter informativo sobre o acesso às tecnologias que cada professor possui. Nesta seção, você encontrará perguntas de múltipla escolha ou de escolha única."
+			},
+			"SS2": {
+				"Title": "Perguntas do questionário para professores",
+				"Descr": "Esta ferramenta de autoavaliação é composta por 23 perguntas distribuídas em 3 áreas e 12 competências digitais, conforme mostrado a seguir:"
+			},
+			"caption1": "Ilustração 1. Estrutura do questionário de autoavaliação",
+			"caption2": "Fonte e elaboração: Guia Edutec (2019)."
+		},
+		"S2": {
+			"Title": "Introdução",
+			"P1": "Caro(a) professor(a):",
+			"P2": "Obrigado pelo seu interesse em participar do processo de autoavaliação do Guia Edutec. Este questionário permitirá que você conheça melhor seu nível de adoção da tecnologia educacional.",
+			"P3": "Lembre-se de que não há respostas certas ou erradas. O mais importante é ser sincero(a) em suas respostas para receber o feedback adequado sobre suas competências digitais. Este processo de autoavaliação marca o primeiro passo para um desenvolvimento profissional mais personalizado e eficaz.",
+			"P4": "Os dados do estudo serão tratados com altos padrões de confidencialidade. Suas informações individuais não serão divulgadas e os resultados da autoavaliação não serão usados contra você. Esses resultados servirão apenas para entender melhor as necessidades digitais de nossos professores.",
+			"SS1": "Orientações sobre o questionário",
+			"P5": "O questionário tem uma duração estimada de 20 a 25 minutos. Cada pergunta apresenta 5 alternativas que refletem gradualmente os diferentes níveis de uso da tecnologia em seu trabalho docente.",
+			"SS2": "Você deve selecionar apenas uma opção.",
+			"P6": "Tenha em mente que as respostas podem não refletir exatamente a sua maneira de usar a tecnologia no trabalho. Nesse caso, escolha a opção que mais se aproxima da sua realidade.",
+			"SS3": "Relatório de resultados",
+			"P7": "Ao finalizar, você receberá um relatório detalhado com sugestões de recursos adaptados às suas necessidades, para impulsionar seu desenvolvimento em competências digitais. O resultado da autoavaliação é expresso em um feedback que mostra cinco níveis de desenvolvimento ou níveis de apropriação tecnológica do professor em cada área e em cada competência, conforme exemplificado a seguir:"
+		},
+		"btnStart": "Iniciar questionário"
+	},
+	"ui": {
+		"btnContinue": "Continuar com o questionário",
+		"indique": "Indique sua resposta"
+	}
+}

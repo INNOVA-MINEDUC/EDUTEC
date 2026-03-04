@@ -1,0 +1,41 @@
+{
+	"Introduction": {
+		"Title": "Edutec Guide Teacher Questionnaire",
+		"About": {
+			"Title": "About the self-assessment",
+			"Descr": "It is an online tool designed for you, as a teacher in public educational institutions, to play a leading role in your own professional development by evaluating and improving your digital skills, thus facilitating your professional development."
+		},
+		"S1": {
+			"Title": "Areas and competencies evaluated",
+			"Descr": "The questionnaire consists of 2 main sections:",
+			"SS1": {
+				"Title": "Context questions",
+				"Descr": "The questions are informative regarding the access to technologies that each teacher has. In this section, you will find multiple-choice or single-choice questions."
+			},
+			"SS2": {
+				"Title": "Teacher questionnaire questions",
+				"Descr": "This self-assessment tool is composed of 23 questions distributed in 3 areas and 12 digital competencies, as shown below:"
+			},
+			"caption1": "Illustration 1. Structure of the self-assessment questionnaire",
+			"caption2": "Source and preparation: Edutec Guide (2019)."
+		},
+		"S2": {
+			"Title": "Introduction",
+			"P1": "Dear teacher:",
+			"P2": "Thank you for your interest in participating in the Edutec Guide self-assessment process. This questionnaire will allow you to better understand your level of adoption of educational technology.",
+			"P3": "Remember that there are no right or wrong answers. The most important thing is to be honest in your answers to receive appropriate feedback on your digital competencies. This self-assessment process marks the first step towards more personalized and effective professional development.",
+			"P4": "The study data will be handled with high standards of confidentiality. Your individual information will not be disclosed, and the self-assessment results will not be used against you. These results will only be used to better understand the digital needs of our teachers.",
+			"SS1": "Guidelines on the questionnaire",
+			"P5": "The questionnaire has an estimated duration of 20 to 25 minutes. Each question presents 5 alternatives that gradually reflect the different levels of technology use in your teaching work.",
+			"SS2": "You should select only one option.",
+			"P6": "Keep in mind that the answers may not exactly reflect your way of using technology at work. In that case, choose the option that best matches your reality.",
+			"SS3": "Results report",
+			"P7": "At the end, you will receive a detailed report with resource suggestions tailored to your needs to boost your development in digital competencies. The self-assessment result is expressed in feedback that shows five levels of development or levels of technological appropriation of the teacher in each area and in each competency as exemplified below:"
+		},
+		"btnStart": "Start questionnaire"
+	},
+	"ui": {
+		"btnContinue": "Continue with the questionnaire",
+		"indique": "Indicate your answer"
+	}
+}

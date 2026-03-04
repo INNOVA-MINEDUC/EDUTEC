@@ -1,0 +1,74 @@
+services:
+  # --- DATABASE ---
+  geos-database:
+    image: mongo:4.2.12
+    container_name: geos-database
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USER}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGO_DB}
+    ports:
+      - "${MONGO_LOCAL_PORT:-30998}:${MONGO_CONTAINER_PORT:-27017}"
+    volumes:
+      - ./geos-database/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - mongodb_data:/data/db:rw
+    networks:
+      - geos-network
+
+  # --- DATABASE SEED ---
+  mongo-seed:
+    build:
+      context: ./geos-database/mongo-seed
+    environment:
+      - MONGO_IP=geos-database
+      - MONGO_DB=${MONGO_DB}
+      - MONGO_USER=${MONGO_USER}
+      - MONGO_PASSWORD=${MONGO_PASSWORD}
+    env_file: .env
+    networks:
+      - geos-network
+    depends_on:
+      - geos-database
+
+  # --- BACKEND ---
+  api:
+    platform: linux/x86_64
+    build:
+      context: ./geos-backend
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./geos-backend:/app
+    ports:
+      - "8000:3000"
+    networks:
+      - geos-network
+    depends_on:
+      - geos-database
+
+  # --- FRONTEND ---
+  frontend:
+    platform: linux/x86_64
+    build:
+      context: ./geos-frontend
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./geos-frontend:/app
+      - node_modules:/app/node_modules
+    ports:
+      - "8001:80"
+    networks:
+      - geos-network
+    depends_on:
+      - api
+
+networks:
+  geos-network:
+    name: edutec_internal_network
+
+volumes:
+  mongodb_data:
+  node_modules:

@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title= content_for?(:title) ? yield(:title) : "Guia edutec"
+    %meta{:content => content_for?(:description) ? yield(:description) : "Guia Edutec", :name => "description"}/
+    = yield :head
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+    = wicked_pdf_stylesheet_link_tag 'survey_feedback/bootstrap.min'
+    = wicked_pdf_stylesheet_link_tag 'survey_feedback/fonts'
+    / = wicked_pdf_stylesheet_link_tag 'survey_feedback/font-awesome.min'
+    / %link{href: "http://fonts.googleapis.com/css?family=Lato:400,400i,700", rel: "stylesheet"}/
+    
+    / Custom styles
+    - if @survey.feedback.downcase.include? "school_v3"
+      = wicked_pdf_stylesheet_link_tag 'survey_feedback_school_v3'
+    - else  
+      = wicked_pdf_stylesheet_link_tag @survey.type + '_pdf'
+    -# = wicked_pdf_stylesheet_link_tag 'survey_feedback_school_v3'
+    /[if lt IE 9] <script src="assets/js/html5shiv.js"></script>
+
+  %body.home
+    %main{:role => "main2"}
+      = yield

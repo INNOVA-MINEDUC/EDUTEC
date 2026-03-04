@@ -1,0 +1,27 @@
+{
+	"h1": "Modifier l'utilisateur",
+	"personal_data": "Données personnelles",
+	"laboral_data": "Données professionnelles",
+	"label": {
+		"name": "Nom complet",
+		"born": "Date de naissance",
+		"gender": "Avec quel genre vous identifiez-vous ?",
+		"stages": "Niveaux d'éducation",
+		"knowledges": "Domaine de connaissance / Composant du curriculum"
+	},
+	"help": {
+		"name": "Requis. Max. 100 caractères"
+	},
+	"error": {
+		"found": "Des erreurs ont été trouvées",
+		"personalDataRequired": "Tous les champs des données personnelles sont requis",
+		"workDataRequired": "Tous les champs des données professionnelles sont requis",
+		"born": "Il semble que vous n'ayez pas défini votre date de naissance ou que vous ayez sélectionné une date incorrecte."
+	},
+	"ui": {
+		"select": {
+			"placeholder": "Sélectionnez une option"
+		},
+		"save": "Enregistrer"
+	}
+}

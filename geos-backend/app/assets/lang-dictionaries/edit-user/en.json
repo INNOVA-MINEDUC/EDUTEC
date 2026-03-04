@@ -1,0 +1,27 @@
+{
+	"h1": "Edit user",
+	"personal_data": "Personal data",
+	"laboral_data": "Professional data",
+	"label": {
+		"name": "Full name",
+		"born": "Date of Birth",
+		"gender": "Which gender do you identify with?",
+		"stages": "Education stages",
+		"knowledges": "Knowledge area / Curriculum component"
+	},
+	"help": {
+		"name": "Required. Max. 100 characters"
+	},
+	"error": {
+		"found": "Some erros were found",
+		"personalDataRequired": "All Personal data fields are required",
+		"workDataRequired": "All Professional data fields are required",
+		"born": "It seems you have not set your date of birth or have selected an incorrect date."
+	},
+	"ui": {
+		"select": {
+			"placeholder": "Select an option"
+		},
+		"save": "Save"
+	}
+}

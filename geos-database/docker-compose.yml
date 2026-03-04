@@ -1,0 +1,36 @@
+version: "3.4"
+services:
+  mongo:
+    image: mongo:4.2.12
+    container_name: geos-database
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USER}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGO_DB}
+    ports:
+      - "${MONGO_LOCAL_PORT}:${MONGO_CONTAINER_PORT}"
+    restart: unless-stopped
+    networks:
+      - geos-network
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - mongodb_data:/data/db:rw
+  mongo-seed:
+    build: ./mongo-seed
+    environment:
+      - MONGO_IP=mongo
+      - MONGO_DB=${MONGO_DB}
+      - MONGO_USER=${MONGO_USER}
+      - MONGO_PASSWORD=${MONGO_PASSWORD}
+    networks:
+      - geos-network
+    depends_on:
+      - mongo
+    links:
+      - mongo
+volumes:
+  mongodb_data:
+networks:
+  geos-network:

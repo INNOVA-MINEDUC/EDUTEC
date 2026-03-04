@@ -1,0 +1,41 @@
+{
+	"Introduction": {
+		"Title": "Guía Edutec Cuestionario de docentes",
+		"About": {
+			"Title": "Sobre el diagnostico",
+			"Descr": "Es una herramienta en línea diseñada para que, usted como docente              de instituciones educativas fiscales, pueda desempeñar un papel             protagónico en su propio desarrollo profesional, al evaluar y              mejorar sus habilidades digitales, facilitando así su desarrollo              profesional."
+		},
+		"S1": {
+			"Title": "Áreas y competencias evaluadas",
+			"Descr": "El cuestionario consta de 2 grandes apartados:",
+			"SS1": {
+				"Title": "Preguntas de contexto",
+				"Descr": "Las preguntas son de carácter informativo respecto al acceso de              tecnologías que tiene cada docente. En esta sección usted encontrará preguntas de opción múltiple o de opción única."
+			},
+			"SS2": {
+				"Title": "Preguntas de cuestionario docente",
+				"Descr": "Esta herramienta de diagnostico está compuesta por 23 preguntas              distribuidas en 3 áreas y 12 competencias digitales, como se              muestra a continuación:"
+			},
+			"caption1": "Ilustración 1. Estructura del cuestionario de diagnostico",
+			"caption2": "Fuente y elaboración: Guía Edutec (2019)."
+		},
+		"S2": {
+			"Title": "Introducción",
+			"P1": "Estimado(a) docente:",
+			"P2": " Gracias por su interés en participar en el proceso de              diagnostico de la Guía Edutec. Este cuestionario le permitirá              conocer mejor su nivel de adopción de la tecnología educativa.",
+			"P3": "Recuerde que no hay respuestas correctas o incorrectas. Lo más              importante es que sea sincero(a) en sus respuestas para recibir la              retroalimentación adecuada sobre sus competencias digitales. Este              proceso de diagnostico marca el primer paso hacia un desarrollo              profesional más personalizado y efectivo.",
+			"P4": " Los datos del estudio se manejarán con altos estándares de              confidencialidad. Su información individual no será divulgada y              los resultados del diagnostico no serán utilizados en su              perjuicio. Estos resultados servirán únicamente para comprender              mejor las necesidades digitales de nuestros docentes.",
+			"SS1": "Orientaciones sobre el cuestionario",
+			"P5": "El cuestionario tiene una duración estimada de 20 a 25 minutos.              Cada pregunta presenta 5 alternativas que reflejan de manera              gradual los diferentes niveles de uso de la tecnología en su              trabajo docente.",
+			"SS2": "Deberá seleccionar únicamente una opción.",
+			"P6": "Tenga en cuenta que las respuestas pueden no reflejar exactamente              su manera de utilizar la tecnología en el trabajo. En ese caso,              elija la opción que más se acerque a su realidad.",
+			"SS3": "Informe de resultados",
+			"P7": "Al finalizar, recibirá un informe detallado con sugerencias de              recursos adaptados a sus necesidades, para impulsar su desarrollo              en competencias digitales. El resultado del diagnostico se              expresa en una retroalimentación que muestra cinco niveles de              desarrollo o niveles de apropiación tecnológica del docente en              cada área y en cada competencia según se ejemplifica a              continuación:"
+		},
+		"btnStart": "Iniciar cuestionario"
+	},
+	"ui": {
+		"btnContinue": "Continuar con el cuestionario",
+		"indique": "Indique su respuesta"
+	}
+}

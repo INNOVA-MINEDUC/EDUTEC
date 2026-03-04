@@ -1,0 +1,27 @@
+{
+	"h1": "Editar usuario",
+	"personal_data": "Datos personales",
+	"laboral_data": "Datos profesionales",
+	"label": {
+		"name": "Nombre completo",
+		"born": "Fecha de nacimiento",
+		"gender": "¿Con qué género te identificas?",
+		"stages": "Etapas educativas",
+		"knowledges": "Área de conocimiento / Componente curricular"
+	},
+	"help": {
+		"name": "Requerido. Máx. 100 caracteres"
+	},
+	"error": {
+		"found": "Se encontraron algunos errores",
+		"personalDataRequired": "Todos los campos de Datos personales son obligatorios",
+		"workDataRequired": "Todos los campos de Datos profesionales son obligatorios",
+		"born": "Parece que no has establecido tu fecha de nacimiento o has seleccionado una fecha incorrecta."
+	},
+	"ui": {
+		"select": {
+			"placeholder": "Selecciona una opción"
+		},
+		"save": "Guardar"
+	}
+}
