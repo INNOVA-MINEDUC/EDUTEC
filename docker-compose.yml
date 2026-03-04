@@ -19,8 +19,7 @@ services:
 
   # --- DATABASE SEED ---
   mongo-seed:
-    build:
-      context: ./geos-database/mongo-seed
+    image: sincal/geos-db-seed:latest
     environment:
       - MONGO_IP=geos-database
       - MONGO_DB=${MONGO_DB}
@@ -34,13 +33,12 @@ services:
 
   # --- BACKEND ---
   api:
+    image: sincal/geos-backend:latest
     platform: linux/x86_64
-    build:
-      context: ./geos-backend
     restart: unless-stopped
     env_file: .env
-    volumes:
-      - ./geos-backend:/app
+    # volumes:
+    #   - ./geos-backend:/app # Desactivado para usar la imagen de Docker Hub
     ports:
       - "8000:3000"
     networks:
@@ -50,14 +48,12 @@ services:
 
   # --- FRONTEND ---
   frontend:
+    image: sincal/geos-frontend:latest
     platform: linux/x86_64
-    build:
-      context: ./geos-frontend
     restart: unless-stopped
     env_file: .env
-    volumes:
-      - ./geos-frontend:/app
-      - node_modules:/app/node_modules
+    # volumes:
+    #   - ./geos-frontend:/app # Desactivado para usar la imagen de Docker Hub
     ports:
       - "8001:80"
     networks:
