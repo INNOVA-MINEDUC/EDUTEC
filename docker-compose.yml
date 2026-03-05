@@ -28,6 +28,7 @@ services:
     env_file: .env
     networks:
       - geos-network
+    restart: "no"
     depends_on:
       - geos-database
 
