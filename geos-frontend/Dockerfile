@@ -1,6 +1,8 @@
 # build environment
 FROM node:13-alpine as build
 WORKDIR /app
+ARG API_URL
+ENV API_URL=$API_URL
 ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json /app/package.json
 RUN npm install

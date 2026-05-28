@@ -2431,6 +2431,14 @@
 		}
 	},
 	"SignUpForm": {
-		"privacyNotice": "Aviso de privacidad"
+		"privacyNotice": "Aviso de privacidad",
+		"label": {
+			"region": "Región",
+			"province": "Provincia",
+			"state": "Estado"
+		},
+		"selectRegion": "Seleccione una región",
+		"selectProvince": "Seleccione una provincia",
+		"selectState": "Seleccione un estado"
 	}
 }
