@@ -15,6 +15,10 @@ RUN apt-get update -qq && \
   cron \
   ntp \
   tzdata \
+  libxrender1 \
+  libxext6 \
+  libx11-6 \
+  libfontconfig1 \
   && rm -rf /var/lib/apt/lists/*
 
 # Files created inside the container respect the ownership

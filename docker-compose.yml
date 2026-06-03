@@ -18,23 +18,23 @@ services:
       - geos-network
 
   # --- DATABASE SEED ---
-  mongo-seed:
-    image: sincal/geos-db-seed:latest
-    environment:
-      - MONGO_IP=geos-database
-      - MONGO_DB=${MONGO_DB}
-      - MONGO_USER=${MONGO_USER}
-      - MONGO_PASSWORD=${MONGO_PASSWORD}
-    env_file: .env
-    networks:
-      - geos-network
-    restart: "no"
-    depends_on:
-      - geos-database
+  #mongo-seed:
+    #image: sincal/geos-db-seed:latest
+    #environment:
+    #  - MONGO_IP=geos-database
+    #  - MONGO_DB=${MONGO_DB}
+    #  - MONGO_USER=${MONGO_USER}
+    #  - MONGO_PASSWORD=${MONGO_PASSWORD}
+    #env_file: .env
+    #networks:
+    #  - geos-network
+    #restart: "no"
+    #depends_on:
+    #  - geos-database
 
   # --- BACKEND ---
   api:
-    image: sincal/geos-backend:latest
+    build: ./geos-backend
     platform: linux/x86_64
     restart: unless-stopped
     env_file: .env
@@ -49,7 +49,7 @@ services:
 
   # --- FRONTEND ---
   frontend:
-    image: sincal/geos-frontend:latest
+    image: geos-frontend-local:latest
     platform: linux/x86_64
     restart: unless-stopped
     env_file: .env

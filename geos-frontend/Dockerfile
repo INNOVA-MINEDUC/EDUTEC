@@ -2,6 +2,8 @@
 FROM node:13-alpine as build
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
+ARG API_URL=/api/
+ENV API_URL=$API_URL
 COPY package.json /app/package.json
 RUN npm install
 COPY . /app
