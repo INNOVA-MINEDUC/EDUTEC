@@ -49,7 +49,7 @@ services:
 
   # --- FRONTEND ---
   frontend:
-    image: geos-frontend-local:latest
+    image: sincal/geos-frontend:latest
     platform: linux/x86_64
     restart: unless-stopped
     env_file: .env
