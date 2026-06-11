@@ -494,6 +494,7 @@ export class SelfEvaluation extends React.Component {
             titulo: this.translate(
               "DiagnosisTeacher.selfEvaluation.digitalCitizenship"
             ),
+            backendKey: "CIDADANIA DIGITAL",
             niveis: Array(5).fill(0),
             competencias: [
               {
@@ -559,6 +560,7 @@ export class SelfEvaluation extends React.Component {
             titulo: this.translate(
               "DiagnosisTeacher.selfEvaluation.professionalDevelopment"
             ),
+            backendKey: "DESENVOLVIMENTO PROFISSIONAL",
             niveis: Array(5).fill(0),
             competencias: [
               {
@@ -566,7 +568,7 @@ export class SelfEvaluation extends React.Component {
                 titulo: this.translate(
                   "DiagnosisTeacher.selfEvaluation.selfDevelopment"
                 ),
-                hifienizacao: "Autodesen- volvimento",
+                hifienizacao: "Autodesenvolvimento",
                 valores: [
                   { numero: 0, porcentagem: 0 },
                   { numero: 0, porcentagem: 0 },
@@ -594,7 +596,7 @@ export class SelfEvaluation extends React.Component {
                 titulo: this.translate(
                   "DiagnosisTeacher.selfEvaluation.sharing"
                 ),
-                hifienizacao: "Compartilha- mento",
+                hifienizacao: "Compartilhamento",
                 valores: [
                   { numero: 0, porcentagem: 0 },
                   { numero: 0, porcentagem: 0 },
@@ -634,10 +636,10 @@ export class SelfEvaluation extends React.Component {
 
         areasUpdate.forEach((area) => {
           let niveis = Array(5).fill(0);
-          if (!$.isEmptyObject(results.data[area.titulo.toUpperCase()])) {
-            Object.keys(results.data[area.titulo.toUpperCase()]).forEach(
+          if (!$.isEmptyObject(results.data[area.backendKey])) {
+            Object.keys(results.data[area.backendKey]).forEach(
               (key) => {
-                let val = results.data[area.titulo.toUpperCase()][key];
+                let val = results.data[area.backendKey][key];
                 niveis[key - 1] = (val * 100) / totalTemp;
               }
             );
@@ -698,9 +700,9 @@ export class SelfEvaluation extends React.Component {
             let result =
               results.data[
                 "<H1>" +
-                  area.titulo.toUpperCase() +
+                  area.backendKey +
                   "</H1>" +
-                  competencia.titulo.toUpperCase()
+                  competencia.hifienizacao.toUpperCase()
               ];
             if (!$.isEmptyObject(result)) {
               competencia.valores.forEach((valor, i) => {

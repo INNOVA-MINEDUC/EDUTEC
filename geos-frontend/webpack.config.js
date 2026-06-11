@@ -87,7 +87,7 @@ const config = {
     //   },
     // }),
 
-    new Dotenv(),
+    new Dotenv({ systemvars: true }),
   ],
 
   // Options affecting the normal modules
