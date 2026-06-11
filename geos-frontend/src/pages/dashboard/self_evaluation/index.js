@@ -41,7 +41,7 @@ export class SelfEvaluation extends React.Component {
     this.state = {
       survey: [],
       total: 0,
-      startDate: new Date(),
+      startDate: new Date(new Date().setFullYear(new Date().getFullYear() - 1)),
       endDate: new Date(),
 
       areas: [
